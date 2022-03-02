@@ -10,7 +10,7 @@ def parse():
 			fstrings_txt = f.readlines()
 			for i in range(len(fstrings_txt)):
 				if (fstrings_txt[i].startswith("192") == False or \
-					fstrings_txt[i].startswith("17") == False or
+					fstrings_txt[i].startswith("172") == False or
 					fstrings_txt[i].startswith("255") == False or 
 					fstrings_txt[i].startswith("10") == False):
 					pattern = re.match(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})',str(fstrings_txt[i]), re.M|re.I)
